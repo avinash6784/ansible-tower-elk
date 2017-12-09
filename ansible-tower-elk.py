@@ -62,7 +62,7 @@ def main():
     # Invoke tower authentication and import data to elasticsearch
     tower = AnsibleTower(args.host, args.username, args.password)    
     tower.auth_token()
-	get_tower_data(args.job_type)
+    get_tower_data(args.job_type)
 
 if __name__ == '__main__':
     main()
